@@ -6,11 +6,11 @@ export default {
 	name: 'home',
 	component: (): Promise<RouteComponent> => import('../layouts/HomeLayout.vue'),
   children: [
-		// {
-		// 	path: '',
-		// 	name: 'selectEvent',
-		// 	component: (): Promise<RouteComponent> => import('../../event/views/SelectEventView.vue')
-		// },
+		{
+			path: '',
+			name: 'cotizacion',
+			component: (): Promise<RouteComponent> => import('./../views/Dashboard.vue')
+		},
 		// {
 		// 	path: '/records',
 		// 	name: 'records',

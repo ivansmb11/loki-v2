@@ -3,7 +3,7 @@
   import { useRouter } from 'vue-router';
   import { useAuth } from '../hooks/useAuth';
   import { useUi } from '../../ui/hooks/useUi';
-  import SpinnerComponent from '../../shared/components/SpinnerComponent.vue';
+  import SpinnerComponent from './../components/SpinnerComponent.vue';
   const router = useRouter();
   const { loginUser } = useAuth();
   const { loading, setLoading, routeTo } = useUi();

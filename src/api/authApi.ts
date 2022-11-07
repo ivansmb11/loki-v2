@@ -2,7 +2,7 @@ import { useStore } from 'vuex';
 import axios from 'axios';
 
 const authApi = axios.create({
-  baseURL: `${ import.meta.env.VITE_API_URI }/auth`
+  baseURL: `http://localhost:3001/api/v1/auth/`
 });
 
 authApi.interceptors.response.use(
