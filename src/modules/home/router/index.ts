@@ -7,15 +7,15 @@ export default {
 	component: (): Promise<RouteComponent> => import('../layouts/HomeLayout.vue'),
   children: [
 		{
-			path: '',
-			name: 'cotizacion',
-			component: (): Promise<RouteComponent> => import('./../views/Dashboard.vue')
+			path: '/clients',
+			name: 'Clients',
+			component: (): Promise<RouteComponent> => import('../views/Clients.vue')
 		},
-		// {
-		// 	path: '/records',
-		// 	name: 'records',
-		// 	component: (): Promise<RouteComponent> => import('../views/GuestRecordsView.vue')
-		// },
+		{
+			path: '/cotizacion',
+			name: 'Cotizacion',
+			component: (): Promise<RouteComponent> => import('../views/Cotizacion.vue')
+		},
 		// {
 		// 	path: '/rp',
 		// 	name: 'rps',

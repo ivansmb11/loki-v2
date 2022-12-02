@@ -48,8 +48,7 @@
       setError( message )
       return;
     }
-    if ( routeTo.value ) router.push( routeTo.value );
-    else router.push({ name: 'selectEvent' });
+    router.push({ name: 'home' });
   }
   </script>
   
